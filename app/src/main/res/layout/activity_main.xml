@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/skyblue">
+
+        <RadioGroup
+            android:id="@+id/radioGroupButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="15dp"
+            android:background="@drawable/radiogroup_bg"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/message"
+                style="@style/MyRadioButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="消息"
+                android:textColor="@drawable/selector_textcolor"
+                android:background="@drawable/groupbutton_bg_left"/>
+
+            <RadioButton
+                android:id="@+id/call_phone"
+                style="@style/MyRadioButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="电话"
+                android:textColor="@drawable/selector_textcolor"
+                android:background="@drawable/groupbutton_bg_right"/>
+
+        </RadioGroup>
+    </RelativeLayout>
+</LinearLayout>
